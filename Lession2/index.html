@@ -18,301 +18,202 @@
         </div>
     </div>
     <div id="topnav">
-        <div>
-            <div>
-                <a><i class="fa fa-home"></i></a>
-                <a>HTML</a>
-                <a>CSS</a>
-                <a>JAVASCRIPT</a>
-                <a>SQL</a>
-                <a>PYTHON</a>
-                <a>PHP</a>
-                <a>BOOTSTRAP</a>
-                <a>HOW TO</a>
-                <a>W3.CSS</a>
-                <a>JQUERY</a>
-                <a>JAVA</a>
-                <a>MORE <i class="fa fa-caret-down"></i></a>
-                <a></a>
-                <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button"
-                    onclick="open_translate(this)" title="Translate W3Schools"></a>
-                <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button"
-                    onclick="changecodetheme(this)" title="Toggle Dark Code"></a>
-                <a class="w3-bar-item w3-button w3-right" target="_blank" href="https://shop.w3schools.com">SHOP</a>
-
-                <a class="w3-bar-item w3-button w3-right" href="https://courses.w3schools.com" target="blank"
-                    title="Courses"
-                    onclick="ga('send', 'event', 'Courses' , 'Clicked on courses in top navigation');">COURSES</a>
-
-                <!--
-            <a class="w3-bar-item w3-button w3-right" id='topnavbtn_exercises' href='javascript:void(0);' onclick='w3_open_nav("exercises")' title='Exercises'>EXERCISES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a>
-            -->
-
-                <a class="w3-bar-item w3-button w3-right" id="topnavbtn_references" href="javascript:void(0);"
-                    onclick="w3_open_nav(&quot;references&quot;)" title="References">REFERENCES <i
-                        class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up"
-                        style="display: none;"></i></a>
-                <a class="w3-bar-item w3-button w3-right w3-hide-medium" id="topnavbtn_exercises"
-                    href="javascript:void(0);" onclick="w3_open_nav(&quot;exercises&quot;)" title="Exercises">EXERCISES
-                    <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up"
-                        style="display:none"></i></a>
-            </div>
-            <div id="nav_tutorials" class="w3-bar-block w3-card-2" style="display: none;">
-                <span onclick="w3_close_nav(&quot;tutorials&quot;)" class="w3-button w3-xlarge w3-right"
-                    style="position:absolute;right:0;font-weight:bold;">×</span>
-                <div class="w3-row-padding" style="padding:24px 48px">
-                    <div class="w3-col l3 m6">
-                        <h3>HTML and CSS</h3>
-                        <a class="w3-bar-item w3-button" href="/html/default.asp">Learn HTML</a>
-                        <a class="w3-bar-item w3-button" href="/css/default.asp">Learn CSS</a>
-                        <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
-                        <a class="w3-bar-item w3-button" href="/w3css/default.asp">Learn W3.CSS</a>
-                        <a class="w3-bar-item w3-button" href="/colors/default.asp">Learn Colors</a>
-                        <a class="w3-bar-item w3-button" href="/icons/default.asp">Learn Icons</a>
-                        <a class="w3-bar-item w3-button" href="/graphics/default.asp">Learn Graphics</a>
-                        <a class="w3-bar-item w3-button" href="/graphics/svg_intro.asp">Learn SVG</a>
-                        <a class="w3-bar-item w3-button" href="/graphics/canvas_intro.asp">Learn Canvas</a>
-                        <a class="w3-bar-item w3-button" href="/howto/default.asp">Learn How To</a>
-                        <a class="w3-bar-item w3-button" href="/sass/default.php">Learn Sass</a>
-                        <div class="w3-hide-large w3-hide-small">
-                            <h3>Artificial Intelligence</h3>
-                            <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
-                            <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine
-                                Learning</a>
-                            <a class="w3-bar-item w3-button" href="/datascience/default.asp">Learn Data Science</a>
-                            <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>
-                            <h3>XML</h3>
-                            <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a>
-                            <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-                            <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
-                            <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-                            <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp">Learn XML Schema</a>
-                            <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
-                            <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp">Learn XPath</a>
-                            <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp">Learn XQuery</a>
-                        </div>
-                    </div>
-                    <div class="w3-col l3 m6">
-                        <h3>JavaScript</h3>
-                        <a class="w3-bar-item w3-button" href="/js/default.asp">Learn JavaScript</a>
-                        <a class="w3-bar-item w3-button" href="/jquery/default.asp">Learn jQuery</a>
-                        <a class="w3-bar-item w3-button" href="/react/default.asp">Learn React</a>
-                        <a class="w3-bar-item w3-button" href="/angular/default.asp">Learn AngularJS</a>
-                        <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp">Learn JSON</a>
-                        <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp">Learn AJAX</a>
-                        <a class="w3-bar-item w3-button" href="/appml/default.asp">Learn AppML</a>
-                        <a class="w3-bar-item w3-button" href="/w3js/default.asp">Learn W3.JS</a>
-                        <h3>Programming</h3>
-                        <a class="w3-bar-item w3-button" href="/python/default.asp">Learn Python</a>
-                        <a class="w3-bar-item w3-button" href="/java/default.asp">Learn Java</a>
-                        <a class="w3-bar-item w3-button" href="/cpp/default.asp">Learn C++</a>
-                        <a class="w3-bar-item w3-button" href="/cs/default.asp">Learn C#</a>
-                        <a class="w3-bar-item w3-button" href="/r/default.asp">Learn R</a>
-                        <div class="w3-hide-small"><br class="w3-hide-medium w3_hide-small"><br
-                                class="w3-hide-medium w3_hide-small"></div>
-                    </div>
-                    <div class="w3-col l3 m6">
-                        <h3>Server Side</h3>
-                        <a class="w3-bar-item w3-button" href="/sql/default.asp">Learn SQL</a>
-                        <a class="w3-bar-item w3-button" href="/php/default.asp">Learn PHP</a>
-                        <a class="w3-bar-item w3-button" href="/asp/default.asp">Learn ASP</a>
-                        <a class="w3-bar-item w3-button" href="/nodejs/default.asp">Learn Node.js</a>
-                        <a class="w3-bar-item w3-button" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
-                        <h3>Web Building</h3>
-                        <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp">Web Templates</a>
-                        <a class="w3-bar-item w3-button" href="/browsers/default.asp">Web Statistics</a>
-                        <a class="w3-bar-item w3-button" href="/cert/default.asp">Web Certificates</a>
-                        <a class="w3-bar-item w3-button" href="/tryit/default.asp">Web Editor</a>
-                        <a class="w3-bar-item w3-button" href="/whatis/default.asp">Web Development</a>
-                        <a class="w3-bar-item w3-button" href="/typingspeed/default.asp">Test Your Typing Speed</a>
-                    </div>
-                    <div class="w3-col l3 m6 w3-hide-medium">
-                        <h3>Artificial Intelligence</h3>
-                        <a class="w3-bar-item w3-button" href="/ai/default.asp">Learn AI</a>
-                        <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp">Learn Machine
-                            Learning</a>
-                        <a class="w3-bar-item w3-button" href="/datascience/default.asp">Learn Data Science</a>
-                        <a class="w3-bar-item w3-button" href="/python/pandas/default.asp">Learn Pandas</a>
-                        <h3>XML</h3>
-                        <a class="w3-bar-item w3-button" href="/xml/default.asp">Learn XML</a>
-                        <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-                        <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp">Learn XML DOM</a>
-                        <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-                        <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp">Learn XML Schema</a>
-                        <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp">Learn XSLT</a>
-                        <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp">Learn XPath</a>
-                        <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp">Learn XQuery</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div id="nav_references" class="w3-bar-block w3-card-2" style="display: none;">
-                <span onclick="w3_close_nav(&quot;references&quot;)" class="w3-button w3-xlarge w3-right"
-                    style="position:absolute;right:0;font-weight:bold;">×</span>
-                <div class="w3-row-padding" style="padding:24px 48px">
-                    <div class="w3-col l3 m6">
-                        <h3>HTML</h3>
-                        <a class="w3-bar-item w3-button" href="/tags/default.asp">HTML Tag Reference</a>
-                        <a class="w3-bar-item w3-button" href="/tags/ref_html_browsersupport.asp">HTML Browser
-                            Support</a>
-                        <a class="w3-bar-item w3-button" href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
-                        <a class="w3-bar-item w3-button" href="/colors/default.asp">HTML Color Reference</a>
-                        <a class="w3-bar-item w3-button" href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
-                        <a class="w3-bar-item w3-button" href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
-                        <a class="w3-bar-item w3-button" href="/graphics/svg_reference.asp">HTML SVG Reference</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/default.asp">HTML Character Sets</a>
-                        <a class="w3-bar-item w3-button" href="/graphics/google_maps_reference.asp">Google Maps
-                            Reference</a>
-                        <h3>CSS</h3>
-                        <a class="w3-bar-item w3-button" href="/cssref/default.asp">CSS Reference</a>
-                        <a class="w3-bar-item w3-button" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
-                        <a class="w3-bar-item w3-button" href="/cssref/css_selectors.asp">CSS Selector Reference</a>
-                        <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3
-                            Reference</a>
-                        <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4
-                            Reference</a>
-                        <a class="w3-bar-item w3-button" href="/w3css/w3css_references.asp">W3.CSS Reference</a>
-                        <a class="w3-bar-item w3-button" href="/icons/icons_reference.asp">Icon Reference</a>
-                        <a class="w3-bar-item w3-button" href="/sass/sass_functions_string.php">Sass Reference</a>
-                    </div>
-                    <div class="w3-col l3 m6">
-                        <h3>JavaScript</h3>
-                        <a class="w3-bar-item w3-button" href="/jsref/default.asp">JavaScript Reference</a>
-                        <a class="w3-bar-item w3-button" href="/jsref/default.asp">HTML DOM Reference</a>
-                        <a class="w3-bar-item w3-button" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a>
-                        <a class="w3-bar-item w3-button" href="/angular/angular_ref_directives.asp">AngularJS
-                            Reference</a>
-                        <a class="w3-bar-item w3-button" href="/appml/appml_reference.asp">AppML Reference</a>
-                        <a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp">W3.JS Reference</a>
-                        <h3>Programming</h3>
-                        <a class="w3-bar-item w3-button" href="/python/python_reference.asp">Python Reference</a>
-                        <a class="w3-bar-item w3-button" href="/java/java_ref_keywords.asp">Java Reference</a>
-                    </div>
-                    <div class="w3-col l3 m6">
-                        <h3>Server Side</h3>
-                        <a class="w3-bar-item w3-button" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
-                        <a class="w3-bar-item w3-button" href="/php/php_ref_overview.asp">PHP Reference</a>
-                        <a class="w3-bar-item w3-button" href="/asp/asp_ref_response.asp">ASP Reference</a>
-                        <h3>XML</h3>
-                        <a class="w3-bar-item w3-button" href="/xml/dom_nodetype.asp">XML Reference</a>
-                        <a class="w3-bar-item w3-button" href="/xml/dom_http.asp">XML Http Reference</a>
-                        <a class="w3-bar-item w3-button" href="/xml/xsl_elementref.asp">XSLT Reference</a>
-                        <a class="w3-bar-item w3-button" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
-                    </div>
-                    <div class="w3-col l3 m6 w3-hide-medium w3-hide-small">
-                        <h3>Character Sets</h3>
-                        <a class="w3-bar-item w3-button" href="/charsets/default.asp">HTML Character Sets</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-                        <a class="w3-bar-item w3-button" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-            <div id="nav_exercises" class="w3-bar-block w3-card-2" style="display: none;">
-                <span onclick="w3_close_nav(&quot;exercises&quot;)" class="w3-button w3-xlarge w3-right"
-                    style="position:absolute;right:0;font-weight:bold;">×</span>
-                <div class="w3-row-padding" style="padding:24px 48px">
-                    <div class="w3-col l4 m6">
-                        <h3>Exercises</h3>
-                        <a class="w3-bar-item w3-button" href="/html/html_exercises.asp">HTML Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/css/css_exercises.asp">CSS Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/js/js_exercises.asp">JavaScript Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/sql/sql_exercises.asp">SQL Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/php/php_exercises.asp">PHP Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/python/python_exercises.asp">Python Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp">jQuery Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp">Bootstrap
-                            Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/java/java_exercises.asp">Java Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
-                        <a class="w3-bar-item w3-button" href="/cs/cs_exercises.asp">C# Exercises</a>
-                    </div>
-                    <div class="w3-col l4 m6">
-                        <h3>Quizzes</h3>
-                        <a class="w3-bar-item w3-button" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap
-                            Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
-                        <a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
-                    </div>
-                    <div class="w3-col l4 m12">
-                        <h3><a style="padding-left:0!important;text-decoration:none;"
-                                href="/cert/default.asp">Certificates</a></h3>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top">HTML
-                            Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" target="_top">JavaScript
-                            Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_frontend.asp" target="_top">Front End
-                            Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top">Python
-                            Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_java.asp" target="_top">Java Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top">jQuery
-                            Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap
-                            Certificate</a>
-                        <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-
-
-            <div id="nav_login" class="w3-bar-block w3-card-2" style="display:none">
-                <span onclick="w3_close_nav(&quot;login&quot;)" class="w3-button w3-xlarge w3-right"
-                    style="position:absolute;right:0;font-weight:bold;">×</span>
-                <div class="loginmodaldiv" style="padding:48px 16px 1px 16px;text-align:center;">
-                    <h2>LOG IN</h2>
-                    <div style="font-size:15px"><a href="https://mypage.w3schools.com/mypage/index.php">Why Log In?</a>
-                    </div>
-                    <div class="loginmodalform">
-                        <form id="loginform" name="loginform" autocomplete="off" method="post">
-                            <div><label>Username</label></div>
-                            <div><input type="email" name="n" placeholder="Enter your e-mail address"
-                                    onfocus="login_inputGetsFocus(this)"></div>
-                            <br>
-                            <div><label>Password</label></div>
-                            <div><input type="password" name="p" placeholder="Enter Your Password"
-                                    onfocus="login_inputGetsFocus(this)"></div>
-                            <br>
-                            <div id="loginerrordiv" style="display:none" class="w3-text-red"></div>
-                            <div class="login_submit_container"><button id="login_submit_button" type="submit"
-                                    onclick="login_user(event)">LOG IN</button></div>
-                            <div style="overflow:auto;margin-top:10px;font-size:15px;">
-                                <div class="login_newusertext">New User? <a
-                                        href="https://mypage.w3schools.com/mypage/login.php?logintyp=1"
-                                        target="_blank">Sign Up For Free!</a></div>
-                                <div class="login_forgotpasswordtext"><a
-                                        href="https://mypage.w3schools.com/mypage/forgot_password.php">Forgot
-                                        password?</a></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <br>
-            </div>
-
-
+        <div id="nav_menu">
+            <a><i class="fa fa-home"></i></a>
+            <a>HTML</a>
+            <a>CSS</a>
+            <a>JAVASCRIPT</a>
+            <a>SQL</a>
+            <a>PYTHON</a>
+            <a>PHP</a>
+            <a>BOOTSTRAP</a>
+            <a>HOW TO</a>
+            <a>W3.CSS</a>
+            <a>JQUERY</a>
+            <a>JAVA</a>
+            <a>MORE <i class="fa fa-caret-down"></i></a>
+            <a>SHOP</a>
+            <a>COURSES</a>
+            <a>REFERENCES <i class="fa fa-caret-down"></i></a>
+            <a>EXERCISES<i class="fa fa-caret-down"></i></a>
         </div>
+        <!-- <div id="nav_tutorials">
+                <span>x</span>
+                <div>
+                    <div>
+                        <h3>HTML and CSS</h3>
+                        <a>Learn HTML</a>
+                        <a>Learn CSS</a>
+                        <a>Learn Bootstrap</a>
+                        <a>Learn W3.CSS</a>
+                        <a>Learn Colors</a>
+                        <a>Learn Icons</a>
+                        <a>Learn Graphics</a>
+                        <a>Learn SVG</a>
+                        <a>Learn Canvas</a>
+                        <a>Learn How To</a>
+                        <a>Learn Sass</a>
+                    </div>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <a>Learn JavaScript</a>
+                        <a>Learn jQuery</a>
+                        <a>Learn React</a>
+                        <a>Learn AngularJS</a>
+                        <a>Learn JSON</a>
+                        <a>Learn AJAX</a>
+                        <a>Learn AppML</a>
+                        <a>Learn W3.JS</a>
+                        <h3>Programming</h3>
+                        <a>Learn Python</a>
+                        <a>Learn Java</a>
+                        <a>Learn C++</a>
+                        <a>Learn C#</a>
+                        <a>Learn R</a>
+                    </div>
+                    <div>
+                        <h3>Server Side</h3>
+                        <a>Learn SQL</a>
+                        <a>Learn PHP</a>
+                        <a>Learn ASP</a>
+                        <a>Learn Node.js</a>
+                        <a>Learn Raspberry Pi</a>
+                        <h3>Web Building</h3>
+                        <a>Web Templates</a>
+                        <a>Web Statistics</a>
+                        <a>Web Certificates</a>
+                        <a>Web Editor</a>
+                        <a>Web Development</a>
+                        <a>Test Your Typing Speed</a>
+                    </div>
+                    <div>
+                        <h3>Artificial Intelligence</h3>
+                        <a>Learn AI</a>
+                        <a>Learn Machine Learning</a>
+                        <a>Learn Data Science</a>
+                        <a>Learn Pandas</a>
+                        <h3>XML</h3>
+                        <a>Learn XML</a>
+                        <a>Learn XML AJAX</a>
+                        <a>Learn XML DOM</a>
+                        <a>Learn XML DTD</a>
+                        <a>Learn XML Schema</a>
+                        <a>Learn XSLT</a>
+                        <a>Learn XPath</a>
+                        <a>Learn XQuery</a>
+                    </div>
+                </div>
+            </div>
+            <div id="nav_references">
+                <span>×</span>
+                <div>
+                    <div>
+                        <h3>HTML</h3>
+                        <a>HTML Tag Reference</a>
+                        <a>HTML Browser Support</a>
+                        <a>HTML Event Reference</aef=>
+                            <a>HTML Color Reference</a>
+                            <a>HTML Attribute Reference</a>
+                            <a>HTML Canvas Reference</a>
+                            <a>HTML SVG Reference</a>
+                            <a>HTML Character Sets</a>
+                            <a>Google Maps Reference</a>
+                            <h3>CSS</h3>
+                            <a>CSS Reference</a>
+                            <a>CSS Browser Support</a>
+                            <a>CSS Selector Reference</a>
+                            <a>Bootstrap 3 Reference</a>
+                            <a>Bootstrap 4 Reference</a>
+                            <a>W3.CSS Reference</a>
+                            <a>Icon Reference</a>
+                            <a>Sass Reference</a>
+                    </div>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <a>JavaScript Reference</a>
+                        <a>HTML DOM Reference</a>
+                        <a>jQuery Reference</a>
+                        <a>AngularJS Reference</a>
+                        <a>AppML Reference</a>
+                        <a>W3.JS Reference</a>
+                        <h3>Programming</h3>
+                        <a>Python Reference</a>
+                        <a>Java Reference</a>
+                    </div>
+                    <div>
+                        <h3>Server Side</h3>
+                        <a>SQL Reference</a>
+                        <a>PHP Reference</a>
+                        <a>ASP Reference</a>
+                        <h3>XML</h3>
+                        <a>XML Reference</a>
+                        <a>XML Http Reference</a>
+                        <a>XSLT Reference</a>
+                        <a>XML Schema Reference</a>
+                    </div>
+                    <div>
+                        <h3>Character Sets</h3>
+                        <a>HTML Character Sets</a>
+                        <a>HTML ASCII</a>
+                        <a>HTML ANSI</a>
+                        <a>HTML Windows-1252</a>
+                        <a>HTML ISO-8859-1</a>
+                        <a>HTML Symbols</a=>
+                            <a>HTML UTF-8</a>
+                    </div>
+                </div>
+            </div>
+            <div id="nav_exercises">
+                <span>×</span>
+                <div>
+                    <div>
+                        <h3>Exercises</h3>
+                        <a>HTML Exercises</a>
+                        <a>CSS Exercises</a>
+                        <a>JavaScript Exercises</a>
+                        <a>SQL Exercises</a>
+                        <a>PHP Exercises</a>
+                        <a>Python Exercises</a>
+                        <a>jQuery Exercises</a>
+                        <a>Bootstrap Exercises</a>
+                        <a>Java Exercises</a>
+                        <a>C++ Exercises</a>
+                        <a>C# Exercises</a>
+                    </div>
+                    <div>
+                        <h3>Quizzes</h3>
+                        <a>HTML Quiz</a>
+                        <a>CSS Quiz</a>
+                        <a>JavaScript Quiz</a>
+                        <a>SQL Quiz</a>
+                        <a>PHP Quiz</a>
+                        <a>Python Quiz</a>
+                        <a>jQuery Quiz</a>
+                        <a>Bootstrap Quiz</a>
+                        <a>Java Quiz</a>
+                        <a>C++ Quiz</a>
+                        <a>C# Quiz</a>
+                        <a>XML Quiz</a>
+                    </div>
+                    <div>
+                        <h3>Certificates</h3>
+                        <a>HTML Certificate</a>
+                        <a>CSS Certificate</a>
+                        <a>JavaScript Certificate</a>
+                        <a>Front End Certificate</a>
+                        <a>SQL Certificate</a>
+                        <a>PHP Certificate</a>
+                        <a>Python Certificate</a>
+                        <a>Java Certificate</a>
+                        <a>jQuery Certificate</a>
+                        <a>Bootstrap Certificate</a>
+                        <a>XML Certificate</a>
+                    </div>
+                </div>
+            </div> -->
     </div>
     <div id="body">
-        <div id="nav">
+        <div id="sidenav">
             <div>
                 <h2><span>HTML</span> Tutorial</h2>
                 <a>HTML HOME</a>
