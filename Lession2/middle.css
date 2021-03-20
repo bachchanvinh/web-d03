@@ -7,14 +7,14 @@
 #sidenav{
     top:40.323px;
     position: sticky;
-    height: 565px;
+    height:612px;
     width: 15%;
     overflow-y: scroll;
-    padding-top: 20px;
     background-color: #f1f1f1!important;
 }
 #main{
     width: 65%;
     padding:16px 32px 32px;
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-family: Verdana,sans-serif;
 }
