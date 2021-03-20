@@ -1,0 +1,8 @@
+.sidemenu{
+    display: flex;
+    flex-flow:column;
+    margin-bottom: 20px;
+}
+.sidemenu::after {
+
+}

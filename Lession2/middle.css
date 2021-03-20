@@ -1,0 +1,15 @@
+#middle{
+    display: flex;
+    flex-flow:row wrap
+}
+
+#sidenav{
+    top:40.323px;
+    position: sticky;
+    height: 565px;
+    width: 220px;
+    overflow-y: scroll;
+}
+#main{
+    width: 50%;
+}

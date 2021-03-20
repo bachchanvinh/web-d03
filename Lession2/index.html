@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./body.css">
     <link rel="stylesheet" href="./heading.css">
     <link rel="stylesheet" href='./topnav.css'>
+    <link rel="stylesheet" href='./middle.css'>
+    <link rel="stylesheet" href='./sidenav.css'>
     <title>HTLM Headings</title>
 </head>
 
@@ -25,26 +27,29 @@
     <div id="topnav">
         <div class="nav_menu menu1">
             <a class="menutitle"><i class="fa fa-home"></i></a>
-            <a class="menutitle">HTML</a>
+            <a class="menutitle HTML">HTML</a>
             <a class="menutitle">CSS</a>
             <a class="menutitle">JAVASCRIPT</a>
             <a class="menutitle">SQL</a>
             <a class="menutitle">PYTHON</a>
             <a class="menutitle">PHP</a>
             <a class="menutitle">BOOTSTRAP</a>
-            <a class="menutitle">HOW TO</a>
+            <!-- <a class="menutitle">HOW TO</a>
             <a class="menutitle">W3.CSS</a>
             <a class="menutitle">JQUERY</a>
-            <a class="menutitle">JAVA</a>
+            <a class="menutitle">JAVA</a> -->
             <a class="menutitle">MORE <i class="fa fa-caret-down"></i></a>
         </div>
         <div class="nav_menu menu2">
-            <a class="menutitle">SHOP</a>
+            <!-- <a class="menutitle">SHOP</a> -->
             <a class="menutitle">COURSES</a>
             <a class="menutitle">REFERENCES <i class="fa fa-caret-down"></i></a>
-            <a class="menutitle">EXERCISES<i class="fa fa-caret-down"></i></a>
+            <a class="menutitle "><i class="fa fa-adjust"></i></a>
+            <a class="menutitle"><i class="fa fa-globe"></i></a>
+            <a class="menutitle"><i class="fa fa-search"></i></a>
+            <!-- <a class="menutitle">EXERCISES<i class="fa fa-caret-down"></i></a> -->
         </div>
-        
+
         <!-- <div id="nav_tutorials">
                 <span>x</span>
                 <div>
@@ -220,9 +225,9 @@
                 </div>
             </div> -->
     </div>
-    <div id="body">
+    <div id="middle">
         <div id="sidenav">
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> Tutorial</h2>
                 <a>HTML HOME</a>
                 <a>HTML Introduction</a>
@@ -284,7 +289,7 @@
                 <a>HTML URL Encode</a>
                 <a>HTML vs. XHTML</a>
             </div>
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> Forms</h2>
                 <a>HTML Forms</a>
                 <a>HTML Form Attributes</a>
@@ -293,12 +298,12 @@
                 <a>HTML Input Attributes</a>
                 <a>HTML Input Form Attributes</a>
             </div>
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> Graphics</h2>
                 <a>HTML Canvas</a>
                 <a>HTML SVG</a>
             </div>
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> Media</h2>
                 <a>HTML Media</a>
                 <a>HTML Video</a>
@@ -306,7 +311,7 @@
                 <a>HTML Plug-ins</a>
                 <a>HTML YouTube</a>
             </div>
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> APIs</h2>
                 <a>HTML Geolocation</a>
                 <a>HTML Drag/Drop</a>
@@ -314,7 +319,7 @@
                 <a>HTML Web Workers</a>
                 <a>HTML SSE</a>
             </div>
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> Examples</h2>
                 <a>HTML Examples</a>
                 <a>HTML Quiz</a>
@@ -323,7 +328,7 @@
                 <a>HTML Summary</a>
                 <a>HTML Accessibility</a>
             </div>
-            <div>
+            <div class="sidemenu">
                 <h2><span>HTML</span> References</h2>
                 <a>HTML Tag List</a>
                 <a>HTML Attributes</a>
@@ -474,110 +479,117 @@
                 <button>❮ Previous</button>
                 <button>Next ❯</button>
             </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div id="advertise">
-            <img src="./img/Capture.PNG" alt="AD" />
-        </div>
-        <div>
-            <div>
-                <button>REPORT ERROR</button>
-                <button>FORUM</button>
-                <button>ABOUT</button>
-                <button>SHOP</button>
-            </div>
-            <div id="err">
-                <span>×</span>
-                <h2>Report Error</h2>
-                <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an
-                    e-mail:</p>
-                <p>help@w3schools.com</p>
-            </div>
-            <div>
-                <div>
-                    <h4>Top Tutorials</h4>
-                    <a>HTML Tutorial</a>
-                    <a>CSS Tutorial</a>
-                    <a>JavaScript Tutorial</a>
-                    <a>How To Tutorial</a>
-                    <a>SQL Tutorial</a>
-                    <a>Python Tutorial</a>
-                    <a>W3.CSS Tutorial</a>
-                    <a>Bootstrap Tutorial</a>
-                    <a>PHP Tutorial</a>
-                    <a>Java Tutorial</a>
-                    <a>C++ Tutorial</a>
-                    <a>jQuery Tutorial</a>
-                </div>
-                <div>
-                    <h4>Top References</h4>
-                    <a>HTML Reference</a>
-                    <a>CSS Reference</a>
-                    <a>JavaScript Reference</a>
-                    <a>SQL Reference</a>
-                    <a>Python Reference</a>
-                    <a>W3.CSS Reference</a>
-                    <a>Bootstrap Reference</a>
-                    <a>PHP Reference</a>
-                    <a>HTML Colors</a>
-                    <a>Java Reference</a>
-                    <a>Angular Reference</a>
-                    <a>jQuery Reference</a>
-                </div>
-                <div>
-                    <h4>Top Examples</h4>
-                    <a>HTML Examples</a>
-                    <a>CSS Examples</a>
-                    <a>JavaScript Examples</a>
-                    <a>How To Examples</a>
-                    <a>SQL Examples</a>
-                    <a>Python Examples</a>
-                    <a>W3.CSS Examples</a>
-                    <a>Bootstrap Examples</a>
-                    <a>PHP Examples</a>
-                    <a>Java Examples</a>
-                    <a>XML Examples</a>
-                    <a>jQuery Examples</a>
-                </div>
-                <div>
-                    <h4>Web Courses</h4>
-                    <a>HTML Course</a><br>
-                    <a>CSS Course</a><br>
-                    <a>JavaScript Course</a><br>
-                    <a>Front End Course</a><br>
-                    <a>SQL Course</a><br>
-                    <a>Python Course</a><br>
-                    <a>PHP Course</a><br>
-                    <a>jQuery Course</a><br>
-                    <a>Java Course</a><br>
-                    <a>C++ Course</a><br>
-                    <a>C# Course</a><br>
-                    <a>XML Course</a><br>
-                    <button>Get Certified »</button>
-                </div>
-            </div>
-            <div>
-                <p>
-                    W3Schools is optimized for learning and training. Examples might be simplified to improve reading
-                    and
-                    learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
-                    warrant full correctness of all content. While using W3Schools, you agree to have read and accepted
-                    our <a>terms of use</a>,<a>cookie and privacy policy</a>.
-                </p>
-                <p>
-                    <a>Copyright 1999-2021</a> by Refsnes Data. All Rights Reserved.
-                </p>
-                <p>
-                    <a href="//www.w3schools.com/w3css/default.asp">W3Schools is Powered by W3.CSS</a>.
-                </p>
-                <a href="//www.w3schools.com">
-                    <img style="width:150px;height:28px;border:0" src="./img/w3schoolscom_gray.gif"
-                        alt="W3Schools.com"></a>
-            </div>
 
+
+            <div id="footer">
+                <div id="advertise">
+                    <img src="./img/Capture.PNG" alt="AD" />
+                </div>
+                <div>
+                    <div>
+                        <button>REPORT ERROR</button>
+                        <button>FORUM</button>
+                        <button>ABOUT</button>
+                        <button>SHOP</button>
+                    </div>
+                    <div id="err">
+                        <span>×</span>
+                        <h2>Report Error</h2>
+                        <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send
+                            us an
+                            e-mail:</p>
+                        <p>help@w3schools.com</p>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Top Tutorials</h4>
+                            <a>HTML Tutorial</a>
+                            <a>CSS Tutorial</a>
+                            <a>JavaScript Tutorial</a>
+                            <a>How To Tutorial</a>
+                            <a>SQL Tutorial</a>
+                            <a>Python Tutorial</a>
+                            <a>W3.CSS Tutorial</a>
+                            <a>Bootstrap Tutorial</a>
+                            <a>PHP Tutorial</a>
+                            <a>Java Tutorial</a>
+                            <a>C++ Tutorial</a>
+                            <a>jQuery Tutorial</a>
+                        </div>
+                        <div>
+                            <h4>Top References</h4>
+                            <a>HTML Reference</a>
+                            <a>CSS Reference</a>
+                            <a>JavaScript Reference</a>
+                            <a>SQL Reference</a>
+                            <a>Python Reference</a>
+                            <a>W3.CSS Reference</a>
+                            <a>Bootstrap Reference</a>
+                            <a>PHP Reference</a>
+                            <a>HTML Colors</a>
+                            <a>Java Reference</a>
+                            <a>Angular Reference</a>
+                            <a>jQuery Reference</a>
+                        </div>
+                        <div>
+                            <h4>Top Examples</h4>
+                            <a>HTML Examples</a>
+                            <a>CSS Examples</a>
+                            <a>JavaScript Examples</a>
+                            <a>How To Examples</a>
+                            <a>SQL Examples</a>
+                            <a>Python Examples</a>
+                            <a>W3.CSS Examples</a>
+                            <a>Bootstrap Examples</a>
+                            <a>PHP Examples</a>
+                            <a>Java Examples</a>
+                            <a>XML Examples</a>
+                            <a>jQuery Examples</a>
+                        </div>
+                        <div>
+                            <h4>Web Courses</h4>
+                            <a>HTML Course</a><br>
+                            <a>CSS Course</a><br>
+                            <a>JavaScript Course</a><br>
+                            <a>Front End Course</a><br>
+                            <a>SQL Course</a><br>
+                            <a>Python Course</a><br>
+                            <a>PHP Course</a><br>
+                            <a>jQuery Course</a><br>
+                            <a>Java Course</a><br>
+                            <a>C++ Course</a><br>
+                            <a>C# Course</a><br>
+                            <a>XML Course</a><br>
+                            <button>Get Certified »</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            W3Schools is optimized for learning and training. Examples might be simplified to improve
+                            reading
+                            and
+                            learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                            we cannot
+                            warrant full correctness of all content. While using W3Schools, you agree to have read and
+                            accepted
+                            our <a>terms of use</a>,<a>cookie and privacy policy</a>.
+                        </p>
+                        <p>
+                            <a>Copyright 1999-2021</a> by Refsnes Data. All Rights Reserved.
+                        </p>
+                        <p>
+                            <a href="//www.w3schools.com/w3css/default.asp">W3Schools is Powered by W3.CSS</a>.
+                        </p>
+                        <a href="//www.w3schools.com">
+                            <img style="width:150px;height:28px;border:0" src="./img/w3schoolscom_gray.gif"
+                                alt="W3Schools.com"></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>

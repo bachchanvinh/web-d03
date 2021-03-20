@@ -26,6 +26,20 @@
 .sloganw3 button {
     cursor: pointer;
     margin-left:20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding:6px 14px;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 6px 14px;
+    width: 78.04px;
+    height: 34.21;
+}
+.sloganw3 button:hover {
+    cursor: pointer;
+    margin-left:20px;
     background-color: #46a049;
     color: #fff;
     padding:6px 14px;
