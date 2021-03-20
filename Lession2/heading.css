@@ -23,7 +23,7 @@
     display:flex;
     flex-flow: row wrap;
 }
-.sloganw3 button {
+.button {
     cursor: pointer;
     margin-left:20px;
     background-color: #4CAF50;
@@ -37,7 +37,7 @@
     width: 78.04px;
     height: 34.21;
 }
-.sloganw3 button:hover {
+.button:hover {
     cursor: pointer;
     margin-left:20px;
     background-color: #46a049;

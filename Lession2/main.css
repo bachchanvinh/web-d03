@@ -1,0 +1,35 @@
+#main h1{
+    margin: 10px 0;
+    font-size: 42px;
+}
+
+.prenex{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+#main .button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding:8px 16px;
+    border-radius: 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: normal;
+    border: none;
+    font-size: 17px;
+    text-align: center;
+    width: fit-content;
+    margin: 0;
+}
+#main .button:hover {
+    background-color: #46a049;
+    color: #fff;
+}
+#main p{
+    font-size: 16px;
+}
+#main hr {
+    margin: 20px -16px;
+    border:0;
+    border-top: 1px solid #eee;
+}

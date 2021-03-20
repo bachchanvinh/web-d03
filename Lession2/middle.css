@@ -1,15 +1,20 @@
 #middle{
     display: flex;
-    flex-flow:row wrap
+    flex-flow:row wrap;
+    /* justify-content: space-between; */
 }
 
 #sidenav{
     top:40.323px;
     position: sticky;
     height: 565px;
-    width: 220px;
+    width: 15%;
     overflow-y: scroll;
+    padding-top: 20px;
+    background-color: #f1f1f1!important;
 }
 #main{
-    width: 50%;
+    width: 65%;
+    padding:16px 32px 32px;
+    overflow-x: hidden
 }
