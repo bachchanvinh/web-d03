@@ -1,0 +1,58 @@
+#heading{
+    padding:20px 16px 0px 16px;
+}
+.logow3 {
+    /* font-family: fontawesome; */
+    font-size:37px;
+    color:#4CAF50;
+    font-weight: 550;
+}
+.logow3 span {
+    cursor:pointer;
+    font-size:37px;
+    color:#555555;
+}
+.logow3 span:hover {
+    cursor:pointer;
+    font-size:37px;
+    color:#4CAF50;
+}
+
+.sloganw3 {
+    float:right;
+    display:flex;
+    flex-flow: row wrap;
+}
+.button {
+    cursor: pointer;
+    margin-left:20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding:6px 14px;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 6px 14px;
+    width: 78.04px;
+    height: 34.21;
+}
+.button:hover {
+    cursor: pointer;
+    margin-left:20px;
+    background-color: #46a049;
+    color: #fff;
+    padding:6px 14px;
+    border-radius: 5px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 6px 14px;
+}
+
+.sloganw3 p {
+    font-family: 'Segoe UI',Arial,sans-serif;
+    letter-spacing: 4px;
+    font-size:15px;
+    padding-top:10px;
+}

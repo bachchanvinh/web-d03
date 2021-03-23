@@ -1,0 +1,20 @@
+#middle{
+    display: flex;
+    flex-flow:row wrap;
+    /* justify-content: space-between; */
+}
+
+#sidenav{
+    top:40.323px;
+    position: sticky;
+    height:559px;
+    width: 15%;
+    overflow-y: scroll;
+    background-color: #f1f1f1!important;
+}
+#main{
+    width: 65%;
+    padding:16px 32px 32px;
+    overflow-x: hidden;
+    font-family: Verdana,sans-serif;
+}

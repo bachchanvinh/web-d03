@@ -1,0 +1,6 @@
+#topnav{
+    font-size: 17px;
+}
+.nav_menu:not:first-child {
+    margin-left: 7px;
+}
