@@ -61,3 +61,38 @@ module.exports.deleteUser = (req, res) => {
     })
 }
 
+module.exports.postUser=(req,res)=>{
+    const { name } = req.body
+    if (!name) {
+        return res.status(400).json({
+            isSuccess: false,
+            message: 'invalid name',
+            name: name
+        })
+    }
+        users.push({ id: `${users.length + 1}`, name })
+    res.status(200).json({
+        isSuccess: true,
+        message: 'Success',
+        users
+    })
+}
+module.exports.updateUser =(req,res)=>{
+    const {id}=req.params
+    const {name}=req.body
+    const indexUser=users.indexOf(users.find(user=>user.id===id))
+    if(!name){
+        return res.status(400).json({
+            isSuccess:false,
+            message:"Fail",
+            // indexUser:indexUser
+        })
+    }
+    users[indexUser].name = name
+    return res.status(200).json({
+        isSuccess:true,
+        message:"Sucessed",
+        userupdated:users[indexUser]
+    })
+    
+}
