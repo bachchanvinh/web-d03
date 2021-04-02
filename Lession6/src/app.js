@@ -20,6 +20,42 @@ app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
 
+
+app.post('/users', (req, res) => {
+    const { name } = req.body
+
+    if (!name) {
+        return res.status(400).json({
+            isSuccess: false,
+            message: 'invalid name',
+            name: name
+        })
+    }
+        users.push({ id: `${users.length + 1}`, name })
+    res.status(200).json({
+        isSuccess: true,
+        message: 'Success',
+        users
+    })
+})
+    // module.exports.postUser = (req, res) => {      
+    //     const { name } = req.body
+    
+    //     if(!name){
+    //         res.status(400).json({
+    //             isSuccess: false,
+    //             message: 'invalid name',
+    //         })  
+    //     }
+    
+    //     users.push({id: `${users.length+1}`,name})
+    
+    //     res.status(200).json({
+    //         isSuccess: true,
+    //         message: 'success',
+    //         users
+    //     })     
+    //   }
 // app.get('/users/:id', (req, res) => {
 //     const { id } = req.params
 //     const user = users.find(user => user.id === id)
@@ -54,21 +90,3 @@ app.listen(port, () => {
 //     })
 // })
 
-// app.post('/users', (req, res) => {
-//     const { name } = req.body
-
-//     if (!name) {
-//         return res.status(400).json({
-//             isSuccess: false,
-//             message: 'invalid name',
-//             name: name
-//         })
-//     }
-
-//     users.push({ id: `${users.length + 1}`, name })
-//     res.status(200).json({
-//         isSuccess: true,
-//         message: 'Success',
-//         users
-//     })
-// })
