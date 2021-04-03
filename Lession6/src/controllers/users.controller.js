@@ -74,7 +74,7 @@ module.exports.postUser=(req,res)=>{
     res.status(200).json({
         isSuccess: true,
         message: 'Success',
-        users
+        name:name
     })
 }
 module.exports.updateUser =(req,res)=>{
