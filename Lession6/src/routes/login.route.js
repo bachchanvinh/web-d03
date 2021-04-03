@@ -4,5 +4,5 @@ var router = express.Router()
 const loginController =require ('../controllers/login.controller')
 
 
-router.post('/',loginController.Login)
+router.post('/',loginController.login)
 module.exports = router
