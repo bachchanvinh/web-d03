@@ -23,19 +23,25 @@ $(document).ready(() => {
         $('#name-input').val('Change value...')
     })
     $("#set-attribute-btn").click(() => {
-        $('#text').attr('style','background-color: green; padding:8px')
+        $('#text').attr('style', 'background-color: green; padding:8px')
     })
-//ADD
-    $('#add-append-btn').click(()=>{
+    //ADD
+    $('#add-append-btn').click(() => {
         $('#text').append('Append')
     })
-    $('#add-prepend-btn').click(()=>{
+    $('#add-prepend-btn').click(() => {
         $('#text').prepend('Prepend')
     })
-    $('#add-after-btn').click(()=>{
+    $('#add-after-btn').click(() => {
         $('#text').after('After')
     })
-    $('#add-before-btn').click(()=>{
+    $('#add-before-btn').click(() => {
         $('#text').before('Before')
     })
+
+    $('#load-btn').click(() => {
+        $('text').load('http://localhost:8888/users/')
+    })
+
+
 })
