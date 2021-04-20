@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container " style="background-color: bisque; height: 300px;">
+        <div class="row flexbox" style="background-color: bisque; height: 300px;">
+            <div class="box1" style="margin:0">
+                <div class="col-12 col-md-12 col-xl-6 box">
+                    Box 1
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-6">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xl-12 box">
+                        Box 2
+                    </div>
+                </div>
+                <div class="row box34">
+                    <div class="col-12 col-md-3 col-xl-3 box box3">
+                        Box 3
+                    </div>
+                    <div class="col-12 col-md-9 col-xl-9 box box4">
+                        Box 4
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+       
+    </div>-->
+    <div id="body">
+        <div id="noti">
+            <span>Bạn chưa nhập email</span>
+        </div>
+        <div id="login-container" class="row">
+            <div id="information" class="col-12 col-sm-6">
+                <h1>Social Network App</h1>
+                <h2>Đăng nhập gần đây</h2>
+                <p>Nhấp vào ảnh của bạn hoặc thêm tài khoản</p>
+                <div id="users-container">
+                    <a href="#">
+                        <div class="user-id users">
+                            <img class="img-container" src='./img/ava1.jpg'>
+                            <div class="username">Vinh</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-id-none users">
+                            <div calss="img-container" id="icon-container">
+                                <div id="plusicon"></div>
+                            </div>
+                            <div class="username">Thêm tài khoản</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 login-user" >
+                <form id="login-form"  >
+                    <input type='text' placeholder="Email" class='user-input' />
+                    <input type='text' placeholder="Mật khẩu" class='user-input' />
+                    <input type="button" value="Đăng nhập" id="loginbtn" />
+                    <div id="line"></div>
+                    <input type="button" value="Đăng ký" id="signupbtn"  />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
