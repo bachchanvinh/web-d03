@@ -1,0 +1,144 @@
+/* .box {
+    background-color: aqua;
+    
+    border:thin red solid;
+}
+
+.flexbox{
+    display: flexbox;
+    flex-flow:row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.box1{
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+
+.box3{
+    order:1;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+}
+
+#body{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    padding-top:92px;
+    margin:auto;
+    width: 980px;
+}
+
+#noti{
+    background-color: rgb(255, 212, 94);
+    border: solid black 2px;
+    color:rgb(182, 133, 0);
+    font-weight:bold;
+    padding: 5px 20px;
+    font-size: 10pt;
+}
+h1{
+    color: rgb(44, 118, 255);
+}
+h2{
+    font-weight: bold;
+}
+#users-container{
+    display: flex;
+    flex-flow:wrap row;
+}
+#users-container > a{
+text-decoration-line: none;
+}
+.users{
+    width: 160px;
+    height: 206px;
+    border-radius: 8px;
+    margin: 10px;
+    border:solid thin rgb(206, 205, 205)
+}
+.img-container{
+    height: 160px;
+    width: 160px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgb(211, 211, 211);
+}
+#plusicon {
+    background-image: url('./img/icon1.png');
+    height: 42px;
+    width: 42px;
+}
+.username{
+    text-align: center;
+    color: black;
+    font-weight:450;
+    padding:10px;
+}
+.login-user{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+}
+#login-form{
+    width: 396px;
+    height: 315px;
+    border-radius: 8px;
+    border:solid thin black;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.user-input{
+    width: 364px;
+    margin:5px;
+    height: 22px;
+    padding:14px 16px;
+    border:thin black solid
+}
+#loginbtn {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 364px;
+    color: white;
+    font-weight: bold;
+    margin:10px 0px;
+}
+#line{
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin: 15px 16px;
+    padding:5px;
+    width: 364px;
+}
+#signupbtn{
+    background-color: #00a31b;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 364px;
+    color: white;
+    font-weight: bold;
+    margin:10px 0px;
+}
