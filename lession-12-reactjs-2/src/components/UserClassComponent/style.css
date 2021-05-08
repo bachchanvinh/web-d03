@@ -1,0 +1,10 @@
+.class-component{
+    border: 1px solid black;
+    border-radius: 16px;
+    margin:16px 20%;
+    padding:0 80px;
+    box-shadow:  3px 5px 7px gray;
+}
+.class-component p {
+    font-weight: 700;
+}
