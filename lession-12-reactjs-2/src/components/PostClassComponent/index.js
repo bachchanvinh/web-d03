@@ -4,11 +4,7 @@ import './style.css'
 class PostClassComponent extends React.Component {
 
     shouldComponentUpdate(newProps) {
-        // console.log()
-        // console.log(newProps,"new")
-        // console.log(this.props,"old")
         if (JSON.stringify(this.props) !== JSON.stringify(newProps)) {
-            // this.setState((props)=>({ data:props }))
             return true
         }
         return false
@@ -17,7 +13,7 @@ class PostClassComponent extends React.Component {
         const { id, author, content, onClick, isClicked, comments, isFocus } = this.props
         console.log('render', author)
         return (
-            <div className={isClicked ? `${id} post-clicked  post-main` : `${id} post  post-main`} onClick={onClick} >
+            <div className={isClicked ? ` post-clicked post` : ` post`} onClick={onClick} >
                 <h3>{author}</h3>
                 <p>{content}</p>
                 {isFocus && <div>
