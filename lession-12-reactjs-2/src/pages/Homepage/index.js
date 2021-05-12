@@ -75,7 +75,7 @@ class Homepage extends React.Component {
         return (
             <div className="home-page">
                 <CounterFuncComponent />
-                {/* <ClockFuncComponent />  */}
+                <ClockFuncComponent /> 
 
                 {this.state.posts.map((list) => <PostFuncComponent {...list} key={list.id} onClick={() => this.handelClickpost(list.id)} />)}
             </div>
