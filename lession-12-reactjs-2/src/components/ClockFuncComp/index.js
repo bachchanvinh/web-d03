@@ -4,10 +4,10 @@ function ClockFuncComponent() {
     const [time, settime] = useState(new Date())
     useEffect(() => {
 
-        let counttime = setInterval(() => {
+        let countTime = setInterval(() => {
             settime(new Date(time.getTime() - 1000))
         }, 1000)
-        return () => clearInterval(counttime)
+        return () => clearInterval(countTime)
 
     })
     return (

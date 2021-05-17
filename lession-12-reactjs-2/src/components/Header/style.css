@@ -2,3 +2,37 @@
     padding: 16px;
     border: 1px solid black;
 }
+
+.nav-header {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: black;
+    height: 65px;
+}
+.nav-header li {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    height: fit-content;
+    margin: 1px;
+    padding: 8px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border:thin solid black;
+    color:black;
+    border-radius: 5px;
+    background-color: white;
+}
+.header-link:hover {
+    background-color:gray;
+    color:white;
+}
+.header-link--active{
+    background-color:rgb(219, 219, 219);
+    /* color:white; */
+}

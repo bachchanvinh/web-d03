@@ -3,10 +3,10 @@ import './style.css'
 
 function PostFuncComponent(props) {
 
-    const { author, content, onClick, isClicked, comments, isFocus } = props
+    const { author, content, onClick, isClicked, comments, isFocus,id } = props
     console.log('render', author)
     return (
-        <div className={isClicked ? ` post-clicked post` : ` post`} onClick={onClick} >
+        <div className={isClicked ? ` post-clicked post` : ` post`} onClick={()=>onClick(id)} >
             <h3>{author}</h3>
             <p>{content}</p>
             {isFocus && <div>
@@ -18,10 +18,7 @@ function PostFuncComponent(props) {
     )
 }
 function checkPropsComming(prevP, nextP) {
-    if (JSON.stringify(prevP) === JSON.stringify(nextP)) {
-        return true
-    }
-    return false
+    return JSON.stringify(prevP) === JSON.stringify(nextP)
 }
 
 export default React.memo(PostFuncComponent, checkPropsComming)

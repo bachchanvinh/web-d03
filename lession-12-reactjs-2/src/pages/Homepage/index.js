@@ -49,16 +49,12 @@ const postsList = [
     },
 
 ]
-
 class Homepage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             posts: postsList
         }
-    }
-    componentDidMount() {
-        console.log(this.state.posts[2].id)
     }
     handelClickpost(id) {
         // console.log(id)
@@ -67,7 +63,7 @@ class Homepage extends React.Component {
         data[indx].isClicked = !data[indx].isClicked
         // for (let i = 0; i < data.length; i++) { data[i].isFocus = false }// Dong cmt cua cac bai viet khac
         data[indx].isFocus = !data[indx].isFocus
-        this.setState(state => ({ posts: data }))
+        this.setState(posts => ({ posts: data }))
         // this.setState({ posts: data })
         // console.log(this.state.posts)
     }
