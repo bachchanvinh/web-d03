@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -7,6 +7,7 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import NotFound from './pages/NotFound'
 import Postspage from './pages/Posts'
+import Postpage from './pages/Post'
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/sign-in" component={SignIn} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/posts" component={Postspage} />
+            <Route path="/post/:id" component={Postpage} children={<Postpage/>}/> 
             <Route path="/" component={NotFound} />
            
 

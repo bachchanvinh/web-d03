@@ -1,20 +1,20 @@
-const Post =require('../models/post.route')
-module.exports.getPosts = (req, res) => {
-   const post= await Post.find((err,doc)=>{
-       if(err){
-           return res.status(500).json({
-               isSuccess:false,
-               message:"Fail to load post"
-           })
-       }
-       else{
-           return res.status(200).json({
-               isSuccess:true,
-               message:'Successed',
-               posts:doc
-           })
-       }
-   })
+const Post = require('../models/post.route')
+module.exports.getPosts = async (req, res) => {
+       const post= await Post.find((err,doc)=>{
+           if(err){
+               return res.status(500).json({
+                   isSuccess:false,
+                   message:"Fail to load post"
+               })
+           }
+           else{
+               return res.status(200).json({
+                   isSuccess:true,
+                   message:'Successed',
+                   posts:doc
+               })
+           }
+       })
 }
 
 module.exports.getPostById = (req, res) => {
@@ -34,8 +34,31 @@ module.exports.getPostById = (req, res) => {
 }
 
 module.exports.addPost = (req, res) => {
-    const { newpost } = req.body
-   
+    const { author, content, isClicked, isFocus, comments } = req.body
+    if (!author || !content) {
+        return res.status(400).json({
+            isSuccess: false,
+            message: "Missing feild",
+            wrong: req.body
+        })
+    }
+    const newPost = new Post({ ...req.body })
+
+    newPost.save(function (err, doc) {
+        if (err) {
+            return res.status(500).json({
+                isSuccess: false,
+                message: "Database error"
+            })
+        }
+        else {
+            return res.status(200).json({
+                isSuccess: true,
+                message: "Succesfull post post",
+                newpost: doc
+            })
+        }
+    })
 
 }
 module.exports.updatePost = (req, res) => {
@@ -54,6 +77,6 @@ module.exports.updatePost = (req, res) => {
     return res.status(200).json({
         isSuccess: true,
         message: "Succeed",
-       Postupdate
+        Postupdate
     })
 }

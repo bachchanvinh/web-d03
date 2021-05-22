@@ -45,8 +45,8 @@ module.exports.deleteUser = (req, res) => {
 }
 
 module.exports.postUser = (req, res) => {
-    const { email, password, firstName, lastName, birthday, isMale } = req.body
-    if (!email || !password || !firstName || !lastName || !birthday) {
+    const { email, password } = req.body
+    if (!email || !password) {
         return res.status(400).json({
             isSuccess: false,
             message: 'Missing required fields',
