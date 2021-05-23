@@ -4,11 +4,11 @@ import './style.css'
 
 function PostFuncComponent(props) {
 
-    const { author, content, onClick, isClicked, comments, isFocus, id } = props
-    console.log('render', author, id)
+    const { author, content, onClick, isClicked, comments, isFocus, _id } = props
+    console.log('render', author, _id)
     return (
-        <Link className="post-link" to={`/post/${id}`} >
-            <div className={isClicked ? ` post-clicked post` : ` post`} onClick={() => onClick(id)} >
+        <Link className="post-link" to={`/post/${_id}`} onClick={() => onClick(_id)}>
+            <div className={isClicked ? ` post-clicked post` : ` post`}  >
                 <h3>{author}</h3>
                 <p>{content}</p>
                 {isFocus && <div>

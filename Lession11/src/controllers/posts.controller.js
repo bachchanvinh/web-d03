@@ -1,25 +1,25 @@
 const Post = require('../models/post.route')
 module.exports.getPosts = async (req, res) => {
-       const post= await Post.find((err,doc)=>{
-           if(err){
-               return res.status(500).json({
-                   isSuccess:false,
-                   message:"Fail to load post"
-               })
-           }
-           else{
-               return res.status(200).json({
-                   isSuccess:true,
-                   message:'Successed',
-                   posts:doc
-               })
-           }
-       })
+    const post = await Post.find((err, doc) => {
+        if (err) {
+            return res.status(500).json({
+                isSuccess: false,
+                message: "Fail to load post"
+            })
+        }
+        else {
+            return res.status(200).json({
+                isSuccess: true,
+                message: 'Successed',
+                posts: doc
+            })
+        }
+    })
 }
 
-module.exports.getPostById = (req, res) => {
+module.exports.getPostById = async (req, res) => {
     const { id } = req.params
-    const post = posts.find(post => post.id === id)
+    const post = await Post.findById(id)
     if (!post) {
         return res.status(400).json({
             isSuccess: false,
